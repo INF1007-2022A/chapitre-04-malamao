@@ -3,14 +3,19 @@
 
 
 def is_even_len(string: str) -> bool:
-    pass
+    #Vérifier si le nombre de caractères d’une chaîne de caractères est pair
+    grandeur=len(string)
+    return grandeur%2==0
 
 
 def remove_third_char(string: str) -> str:
+    #Supprimer le 3ème caractère d’une chaîne de caractères
+
     pass
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
+
     pass
 
 

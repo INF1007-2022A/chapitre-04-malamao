@@ -34,7 +34,12 @@ def get_number_of_char(string: str, char: str) -> int:
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+    liste_mots = sentence.split()
+    compteur=0
+    for n in range (len(liste_mots)):
+        if liste_mots[n]==word:
+            compteur+=1
+    return compteur
 
 
 def main() -> None:

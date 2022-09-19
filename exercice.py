@@ -20,7 +20,15 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+    #Renvoyer le nombre d’occurrences d’un caractère
+    #dans une chaîne de caractères,
+    #sans utiliser de fonctions avancées
+    n=len(string)
+    compteur=0
+    for k in range (n):
+        if string[k]==char:
+            compteur+=1
+    return compteur
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
@@ -40,7 +48,7 @@ def main() -> None:
     chaine = "hello world!"
     print(f"On remplace le caratère w par le caractère z dans la chaine: {chaine}. Résultat : {replace_char(chaine, 'w', 'z')}")
 
-    print(f"Le nombre d'occurrence de l dans hello est : {get_number_of_char(chaine, 'l')}")
+    print(f"Le nombre d'occurrence de l dans hello world! est : {get_number_of_char(chaine, 'l')}")
     
     chaine = "Baby shark doo doo doo doo doo doo"
     print(f"L'occurence du mot doo dans la chaine {chaine} est: {get_number_of_words(chaine, 'doo')}")
